@@ -30,8 +30,10 @@ function Drum() {
         setVolume(newValue);
         setDisplay(`Volume: ${newValue}`);
         window.setTimeout(() => {
-            setDisplay("");
-        }, 1500);
+            if (display.includes("Volume")) {
+                setDisplay("");
+            }
+        }, 1000);
     }
 
   return (
