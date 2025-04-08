@@ -1,50 +1,58 @@
-# React + TypeScript + Vite
+# Drum Machine
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🥁 A dynamic, interactive drum machine built with React that lets you play different drum sounds with keyboard keys or mouse clicks.
 
-Currently, two official plugins are available:
+## Features 🎛️
+- 🔊 **9 Different Drum Pads** - Each with unique sounds
+- ⌨️ **Keyboard Support** - Play sounds using QWERTY keys
+- 🎚️ **Volume Control** - Adjust overall volume
+- 📛 **Display Panel** - Shows active sound name
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
+👉 [https://drum-machine-6ge4.onrender.com/](https://drum-machine-6ge4.onrender.com/)
 
-## Expanding the ESLint configuration
+## Installation
+```bash
+# Clone the repository
+git clone https://github.com/maker-dev/drum-machine.git
+cd drum-machine
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# Install dependencies
+npm install
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+# Start development server
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Technologies Used
+- ⚛️ React with Hooks (useState, useEffect)
+- 🎨 CSS Modules for styling
+- ⌨️ Keyboard event listeners
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Sound Bank
+The app includes these drum sounds:
+1. Bass Drum (Q)
+2. Snare Drum (W)
+3. Closed Hi-Hat (E)
+4. Open Hi-Hat (A)
+5. Clap (S)
+6. Crash Cymbal (D)
+7. Tom 1 (Z)
+8. Tom 2 (X)
+9. Ride Cymbal (C)
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+## How to Use
+1. Click any drum pad with your mouse OR
+2. Press the corresponding keyboard key (Q,W,E,A,S,D,Z,X,C)
+3. Adjust volume using the slider
+4. See the active sound name in the display
+
+## Keyboard Mapping
 ```
+Q W E
+A S D
+Z X C
+```
+---
+
+**Rock on!** 🤘
